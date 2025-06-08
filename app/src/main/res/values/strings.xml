@@ -6,5 +6,6 @@
     -->
     <string name="hello_world">From the Square world,\nHello, %1$s!</string>
     <string name="tile_label">Example tile</string>
-    <string name="complication_label">Example complication</string>
+    <string name="complication_label">MTA Train Times</string>
+    <string name="watch_face_name">MTA Watch Face</string>
 </resources>
