@@ -8,4 +8,18 @@
     <string name="tile_label">Example tile</string>
     <string name="complication_label">MTA Train Times</string>
     <string name="watch_face_name">MTA Watch Face</string>
+
+    <string name="long_text_only">Text Only</string>
+    <string name="long_text_only_content_description">@string/long_text_only</string>
+    <string name="long_text_with_title">Text w/ Title</string>
+    <string name="long_text_with_title_content_description">Text with Title</string>
+    <string name="long_text_with_icon">Text w/ Icon</string>
+    <string name="long_text_with_icon_content_description">Text with Icon</string>
+    <string name="long_text_with_icon_and_title">Text w/ Icon &amp; Title</string>
+    <string name="long_text_with_icon_and_title_content_description">Text with Icon and Title</string>
+    <string name="long_text_with_image">Text with Image</string>
+    <string name="long_text_with_image_content_description">@string/long_text_with_image</string>
+    <string name="long_text_with_image_and_title">Text w/ Image &amp; Title</string>
+    <string name="long_text_with_image_and_title_content_description">Text with Image and Title</string>
+    <string name="long_title">Long Title</string>
 </resources>
