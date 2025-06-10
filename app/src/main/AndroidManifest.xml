@@ -14,7 +14,7 @@
         <service
             android:name=".complication.MainComplicationService"
             android:exported="true"
-            android:label="@string/complication_label"
+            android:label="Short Text Complication"
             android:permission="com.google.android.wearable.permission.BIND_COMPLICATION_PROVIDER">
             <intent-filter>
                 <action android:name="android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST" />
@@ -22,14 +22,34 @@
 
             <meta-data
                 android:name="android.support.wearable.complications.SUPPORTED_TYPES"
-                android:value="SHORT_TEXT,LONG_TEXT" />
+                android:value="SHORT_TEXT" />
             <meta-data
                 android:name="android.support.wearable.complications.UPDATE_PERIOD_SECONDS"
                 android:value="300" />
 
+            <!--            <meta-data-->
+            <!--                android:name="android.support.wearable.complications.PROVIDER_CONFIG_ACTION"-->
+            <!--                android:value="PROVIDER_CONFIG_ACTION"/>-->
+        </service>
+        <service
+            android:name=".complication.MainComplicationService2"
+            android:exported="true"
+            android:label="Long Text Complication"
+            android:permission="com.google.android.wearable.permission.BIND_COMPLICATION_PROVIDER">
+            <intent-filter>
+                <action android:name="android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST" />
+            </intent-filter>
+
             <meta-data
-                android:name="android.support.wearable.complications.PROVIDER_CONFIG_ACTION"
-                android:value="PROVIDER_CONFIG_ACTION"/>
+                android:name="android.support.wearable.complications.SUPPORTED_TYPES"
+                android:value="LONG_TEXT" />
+            <meta-data
+                android:name="android.support.wearable.complications.UPDATE_PERIOD_SECONDS"
+                android:value="300" />
+
+            <!--            <meta-data-->
+            <!--                android:name="android.support.wearable.complications.PROVIDER_CONFIG_ACTION"-->
+            <!--                android:value="PROVIDER_CONFIG_ACTION"/>-->
         </service>
         <service
             android:name=".complication.LongTextDataSourceService"

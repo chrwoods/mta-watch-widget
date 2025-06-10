@@ -17,7 +17,7 @@ import com.chrwoods.mtawatchwidget.data.MtaRepository
 /**
  * Skeleton for complication data source that returns short text.
  */
-class MainComplicationService : SuspendingComplicationDataSourceService() {
+class MainComplicationService2 : SuspendingComplicationDataSourceService() {
     private var repository: MtaRepository? = null
 
     override fun onCreate() {
@@ -68,16 +68,16 @@ class MainComplicationService : SuspendingComplicationDataSourceService() {
                     contentDescription,
                 ).build(),
             )
-//                .setMonochromaticImage(
-//                    MonochromaticImage.Builder(
-//                        image = Icon.createWithResource(this, R.drawable.splash_icon),
-//                    ).build(),
-//                )
-//                .build()
-            .setSmallImage(
-                SmallImage.Builder(
-                    image = Icon.createWithResource(this, R.drawable.ic_launcher_foreground),
-                    type = SmallImageType.ICON,
-                ).build(),
-            ).build()
+                .setMonochromaticImage(
+                    MonochromaticImage.Builder(
+                        image = Icon.createWithResource(this, R.drawable.splash_icon),
+                    ).build(),
+                )
+                .build()
+//            .setSmallImage(
+//                SmallImage.Builder(
+//                    image = Icon.createWithResource(this, R.drawable.ic_launcher_foreground),
+//                    type = SmallImageType.ICON,
+//                ).build(),
+//            ).build()
 }
