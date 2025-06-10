@@ -14,7 +14,7 @@
         <service
             android:name=".complication.MainComplicationService"
             android:exported="true"
-            android:label="Short Text Complication"
+            android:label="Short or Long Text Complication"
             android:permission="com.google.android.wearable.permission.BIND_COMPLICATION_PROVIDER">
             <intent-filter>
                 <action android:name="android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST" />
@@ -22,10 +22,13 @@
 
             <meta-data
                 android:name="android.support.wearable.complications.SUPPORTED_TYPES"
-                android:value="SHORT_TEXT" />
+                android:value="LONG_TEXT,SHORT_TEXT,NO_DATA" />
             <meta-data
                 android:name="android.support.wearable.complications.UPDATE_PERIOD_SECONDS"
                 android:value="300" />
+            <meta-data
+                android:name="android.support.wearable.complications.DYNAMIC_DATA"
+                android:value="true" />
 
             <!--            <meta-data-->
             <!--                android:name="android.support.wearable.complications.PROVIDER_CONFIG_ACTION"-->

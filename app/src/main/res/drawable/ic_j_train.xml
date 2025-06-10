@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Brown circle with 'J' cutout using evenOdd fillType -->
+    <path
+        android:fillColor="#996633"
+        android:fillType="evenOdd"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2z
+M13,7 v6.5 a1,1 0 0 1 -2,0 v-0.5 h-2 v0.5 a3,3 0 0 0 6,0 V7 h-2z"/>
+</vector> 
